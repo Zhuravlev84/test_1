@@ -1,0 +1,80 @@
+.content {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+}
+
+.link {
+    display: flex;
+    margin-top: 42px;
+    gap: 48px;
+}
+
+.link a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-svg {
+    margin-top: 29px;
+    margin-left: 212px
+}
+
+.header-nav {
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    gap: 45px;
+}
+
+.search {
+    display: flex;
+    margin: 33px 0 0 212px;
+    width: 256px;
+    height: 34px;
+    border: 1px solid #000;
+    border-radius: 60px;
+    font-size: 20px;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-feature-settings: 'liga' off;
+    font-family: Lato;
+    font-size: 14px;
+        font-weight: 400;
+    line-height: 24px
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.search-field {
+    width: 209px;
+    margin: 10px 0 9px 18px;
+    color: #000;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.icons-header {
+    display: flex;
+    gap: 25px;
+    margin: 40px 0 0 12px;
+    align-items: baseline;
+}

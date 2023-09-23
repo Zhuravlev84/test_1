@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <nav class="navigation">
+                <div class="link">
+                    <a href="#">Catalog</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Questions</a>
+                </div>
+                <a href="#"> <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" width="86" height="43"
+                        viewBox="0 0 86 43" fill="none">
+                        <path
+                            d="M22.42 19.2L12.14 4.56V13.07C12.14 15.25 12.28 18.96 16.26 18.96V19.21H7.59V18.96C11.35 18.96 11.9 15.22 11.9 13.07V4.23L10.62 2.4C8.98 0.250001 7.92 0.270001 7.21 0.220001V0H15.91L25.18 13.39V6.11C25.18 3.57 24.31 0.220001 21.28 0.220001V0H29.54V0.220001C26.16 0.220001 25.42 3.57 25.42 6.11V19.2H22.42Z"
+                            fill="black" />
+                        <path
+                            d="M46.67 13.86V19.21H30.74V18.96C31.89 18.96 32.32 17.32 32.32 15.47V3.77C32.32 2.08 31.94 0.220001 30.74 0.220001V0H46.31V5.59H46.06C46.06 0.27 38.61 0.240002 38.61 0.240002H37.63V9.38H39.84C39.87 9.38 42.76 9.46 43.06 6.16H43.31V12.84H43.06C42.76 9.57 39.87 9.62 39.84 9.62H37.63V18.95H38.61C38.61 18.95 46.41 19.25 46.41 13.85H46.67V13.86Z"
+                            fill="black" />
+                        <path
+                            d="M79.37 0V0.220001C78.28 0.220001 76.62 1.06 74.62 5.87L69.85 19.21H68.87C66.33 13.29 64.7 9.47 63.61 6.99L59.25 19.21H58.27C51.4 3.14 51.04 2.44 51.04 2.44C50.11 0.260002 49.73 0.29 49.02 0.23V0.0100021H57.53V0.23C55.78 0.23 57.18 3.39 57.18 3.39L61.3 12.75L63.48 6.67C61.82 2.8 61.65 2.44 61.65 2.44C60.72 0.260002 60.34 0.29 59.63 0.23V0.0100021H68.14V0.23C66.39 0.23 67.79 3.39 67.79 3.39L71.88 12.77L74.33 5.87C75.01 3.93 74.41 0.220001 71.63 0.220001V0H79.37Z"
+                            fill="black" />
+                        <path
+                            d="M30.35 23.65V23.87C29.26 23.87 27.59 24.72 25.6 29.52L20.83 42.86H19.85C17.31 36.94 15.68 33.12 14.59 30.64L10.23 42.86H9.25C2.38 26.79 2.02 26.09 2.02 26.09C1.09 23.91 0.71 23.94 0 23.88V23.66H8.51V23.88C6.76 23.88 8.16 27.04 8.16 27.04L12.28 36.4L14.46 30.32C12.8 26.45 12.63 26.09 12.63 26.09C11.7 23.91 11.32 23.94 10.61 23.88V23.66H19.12V23.88C17.37 23.88 18.77 27.04 18.77 27.04L22.86 36.42L25.32 29.52C26 27.58 25.4 23.87 22.62 23.87V23.65H30.35Z"
+                            fill="black" />
+                        <path
+                            d="M38.66 23.65H38.8C45.7 39.47 46.16 40.37 46.16 40.37C47.14 42.55 48.07 42.58 48.61 42.63V42.85H39.06V42.63C41.24 42.63 39.61 39.44 39.61 39.44L38.74 37.56H33.39C32.84 38.81 33.34 42.63 36.61 42.63V42.85H28.75V42.63C29.57 42.57 31.04 42.36 33.14 37.56L38.66 23.65ZM35.91 31.18L33.48 37.32H38.64L35.91 31.18Z"
+                            fill="black" />
+                        <path
+                            d="M67.85 23.65V23.87C66.68 23.87 64.93 24.72 62.8 29.52L57.43 42.86H56.64C49.33 26.79 48.95 26.09 48.95 26.09C47.97 23.91 47.56 23.94 46.8 23.88V23.66H55.88V23.88C54 23.88 55.5 27.04 55.5 27.04L59.73 36.45L62.54 29.52C63.36 27.5 62.87 23.87 59.59 23.87V23.65H67.85Z"
+                            fill="black" />
+                        <path
+                            d="M85.16 37.5V42.85H69.23V42.6C70.38 42.6 70.81 40.96 70.81 39.11V27.41C70.81 25.72 70.43 23.86 69.23 23.86V23.64H84.81V29.23H84.56C84.56 23.91 77.11 23.88 77.11 23.88H76.13V33.02H78.34C78.37 33.02 81.26 33.1 81.56 29.8H81.81V36.48H81.56C81.26 33.21 78.37 33.26 78.34 33.26H76.13V42.59H77.11C77.11 42.59 84.91 42.89 84.91 37.49H85.16V37.5Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="search">
+                    <input class="search-field" type="search" required name="input-search" placeholder="Search">
+                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.0993 10.2136L15.5656 13.6799C16.0863 14.2007 16.0863 15.0449 15.5656 15.5656C15.0448 16.0863 14.2006 16.0863 13.6799 15.5656L10.2134 12.0992C10.203 12.0888 10.1944 12.0773 10.1858 12.0659C10.1791 12.0571 10.1725 12.0483 10.165 12.04C9.13039 12.722 7.89195 13.1201 6.56 13.1201C2.93699 13.1201 0 10.183 0 6.56006C0 2.93705 2.93705 0 6.56006 0C10.1831 0 13.1201 2.93705 13.1201 6.56013C13.1201 7.89202 12.722 9.13052 12.04 10.1652C12.0483 10.1726 12.057 10.1792 12.0658 10.1858C12.0773 10.1945 12.0888 10.2031 12.0993 10.2136ZM2.2741 6.56006C2.2741 8.92711 4.19296 10.846 6.56006 10.846C8.92704 10.846 10.846 8.92711 10.846 6.56006C10.846 4.19302 8.92704 2.2741 6.56006 2.2741C4.19302 2.2741 2.2741 4.19296 2.2741 6.56006Z"
+                                fill="black" />
+                        </svg></a>
+                </div>
+                <div class="icons-header">
+                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"
+                            fill="none">
+                            <path
+                                d="M5.99312 6.48649C7.80885 6.48649 9.28079 5.03444 9.28079 3.24324C9.28079 1.45205 7.80885 0 5.99312 0C4.17738 0 2.70544 1.45205 2.70544 3.24324C2.70544 5.03444 4.17738 6.48649 5.99312 6.48649Z"
+                                fill="black" />
+                            <path
+                                d="M5.99321 8.10815C2.70219 8.10815 0.0343018 10.74 0.0343018 13.9865H11.9521C11.9521 10.74 9.28422 8.10815 5.99321 8.10815Z"
+                                fill="black" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 4.43162C16 9.57434 8 15 8 15C8 15 0 9.57434 0 4.43162C0 1.98468 1.94 0 4.33333 0C5.87733 0 7.23267 0.825644 8 2.06854C8.76733 0.825644 10.1227 0 11.6667 0C14.06 0 16 1.98468 16 4.43162Z"
+                                fill="black" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                            fill="none">
+                            <path
+                                d="M12.5547 5.25074H14.0989L11.8098 1.39208C11.6254 1.07941 11.2168 0.972813 10.8985 1.15757C10.5803 1.33878 10.4718 1.74028 10.6599 2.05295L12.5547 5.25074Z"
+                                fill="black" />
+                            <path
+                                d="M7.31492 2.05296C7.49935 1.74029 7.39448 1.33879 7.07625 1.15758C6.75803 0.976374 6.3494 1.07941 6.16497 1.39209L3.87592 5.2543H5.42003L7.31492 2.05296Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.6555 6.43396H1.30838C0.682782 6.43396 0.176514 6.93139 0.176514 7.54608V8.77901C0.176514 9.39369 0.682782 9.89113 1.30838 9.89113H1.66277L2.75486 15.7075C2.89228 16.3933 3.52873 16.9369 4.1905 16.9369H4.62444H7.47401H8.52271H8.86986H9.21702H10.2657H13.1153H13.5492C14.211 16.9369 14.8474 16.3933 14.9849 15.7075L16.0842 9.88757H16.6592C17.2848 9.88757 17.791 9.39014 17.791 8.77545V7.54253C17.7874 6.93139 17.2811 6.43396 16.6555 6.43396ZM6.42531 12.2468V14.7553C6.42531 15.1142 6.12878 15.3842 5.78524 15.3842C5.42 15.3842 5.14517 15.0929 5.14517 14.7553V13.7036V11.2378C5.14517 10.8789 5.4417 10.6089 5.78524 10.6089C6.15048 10.6089 6.42531 10.9002 6.42531 11.2378V12.2468ZM8.47931 14.7553V12.2468V11.2378C8.47931 10.9002 8.18278 10.6089 7.83924 10.6089C7.4957 10.6089 7.19917 10.8789 7.19917 11.2378V13.7036V14.7553C7.19917 15.0929 7.47401 15.3842 7.83924 15.3842C8.18278 15.3842 8.47931 15.1142 8.47931 14.7553ZM10.5442 13.7036V14.7553C10.5442 15.0929 10.2693 15.3842 9.90409 15.3842C9.56055 15.3842 9.26403 15.1142 9.26403 14.7553V12.2468V11.2378C9.26403 10.9002 9.56055 10.6089 9.90409 10.6089C10.2476 10.6089 10.5442 10.8789 10.5442 11.2378V13.7036ZM12.5982 14.7553V13.7036V11.2378C12.5982 10.8789 12.3016 10.6089 11.9581 10.6089C11.5929 10.6089 11.318 10.9002 11.318 11.2378V12.2468V14.7553C11.318 15.1142 11.6146 15.3842 11.9581 15.3842C12.3233 15.3842 12.5982 15.0929 12.5982 14.7553Z"
+                                fill="black" />
+                        </svg></a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="main-box">
+            <div class="content">
+                <div class="main-section">
+                    <h1 class="block">your <br /> fashion wave</h1>
+                    <div class="main-button"> <a href="#">Go to shop</a></div>
+                    <div class="circle-box circle-box--right">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle circle--black"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="content">
+                <h2>будет слайдер</h2>
+            </div>
+
+        </section>
+
+
+        <section class="icons-main">
+            <div class="content">
+                <div>
+                    <h2>Advantages</h2>
+                </div>
+                <nav class="main-nav">
+                    <a href="#"><img class="link-one" src="img/Group_45.png" alt=""></a>
+                    <a href="#"><img src="img/Group_44.png" alt=""></a>
+                    <a href="#"><img src="img/Group_43.png" alt=""></a>
+                    <a href="#"><img src="img/Group_42.png" alt=""></a>
+                </nav>
+            </div>
+
+        </section>
+        <section class="main-product">
+            <div class="content">
+                <div>
+                    <h2>OUR BEST SELLERS</h2>
+                </div>
+                <div class="product-box">
+                    <article class="product">
+                        <a href="#"><img src="img/Maskgroup_1.png" alt="фото товара"></a>
+                        <h4 class="name-product">CITY BAG</h4>
+                        <p class="price">29 $</p>
+                    </article>
+                    <article class="product">
+                        <a href="#"><img src="img/Maskgroup_2.png" alt="фото товара"></a>
+                        <h4 class="name-product">COAT</h4>
+                        <p class="price">69 $</p>
+                    </article>
+                    <article class="product">
+                        <a href="#"><img src="img/Maskgroup_3.png" alt="фото товара"></a>
+                        <h4 class="name-product">YELLOW SHOES</h4>
+                        <p class="price">83 $</p>
+                    </article>
+                    <article class="product">
+                        <a href="#"><img src="img/Maskgroup_4.png" alt="фото товара"></a>
+                        <h4 class="name-product">WHITE BLOUSE</h4>
+                        <p class="price">72 $</p>
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="quote">
+            <div class="content">
+                <div>
+                    <h2>Reviews</h2>
+                </div>
+
+                <div class="figure">
+                    <figure class="figure-box">
+                        <div class="figure-quote">
+                            <ul>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_white.png" alt=""></li>
+                                <li>4/5</li>
+                            </ul>
+                            <h3>Efficient Collaborating</h3>
+                            <p class="figure-dsc">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Auctor
+                                neque sed imperdiet nibh <br />
+                                lectus feugiat nunc sem.</p>
+                        </div>
+                        <p class="triangle"></p>
+                        <img src="img/quote_1.png" alt="">
+                        <p class="name">Joanne Cooper</p>
+
+                    </figure>
+                    <figure class="figure-box">
+                        <div class="figure-quote">
+                            <ul>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li>5/5</li>
+                            </ul>
+                            <h3>Efficient Collaborating</h3>
+                            <p class="figure-dsc">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Auctor
+                                neque sed imperdiet nibh <br />
+                                lectus feugiat nunc sem.</p>
+                        </div>
+                        <p class="triangle"></p>
+                        <img class="foto-center" src="img/quote_2.png" alt="">
+                        <p class="name">Amelia</p>
+
+                    </figure>
+
+                    <figure class="figure-box">
+                        <div class="figure-quote">
+                            <ul>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li><img src="img/Star_black.png" alt=""></li>
+                                <li>5/5</li>
+                            </ul>
+                            <h3>Efficient Collaborating</h3>
+                            <p class="figure-dsc">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Auctor
+                                neque sed imperdiet nibh <br />
+                                lectus feugiat nunc sem.</p>
+                        </div>
+                        <p class="triangle"></p>
+                        <p class="foto-circle">LH</p>
+                        <p class="name">Lily H.</p>
+
+                    </figure>
+                </div>
+                <div class="circle-box circle-box--center ">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle circle--black"></div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="content">
+            <div class="footer">
+                <div class="footer-info"> <svg xmlns="http://www.w3.org/2000/svg" width="145" height="73"
+                        viewBox="0 0 145 73" fill="none">
+                        <path
+                            d="M38.1741 32.6914L20.6706 7.76421V22.254C20.6706 25.9658 20.9089 32.2828 27.6856 32.2828V32.7084H12.9234V32.2828C19.3255 32.2828 20.2619 25.9148 20.2619 22.254V7.20232L18.0825 4.08643C15.2901 0.425672 13.4853 0.459725 12.2764 0.374591V0H27.0897L42.8735 22.7989V10.4034C42.8735 6.07856 41.3921 0.374591 36.233 0.374591V0H50.2972V0.374591C44.5421 0.374591 43.2821 6.07856 43.2821 10.4034V32.6914H38.1741Z"
+                            fill="white" />
+                        <path
+                            d="M79.4639 23.5991V32.7084H52.3403V32.2828C54.2983 32.2828 55.0305 29.4904 55.0305 26.3404V6.4191C55.0305 3.54157 54.3835 0.374591 52.3403 0.374591V0H78.851V9.51797H78.4253C78.4253 0.459723 65.7403 0.408645 65.7403 0.408645H64.0717V15.9711H67.8346C67.8857 15.9711 72.8065 16.1073 73.3173 10.4885H73.7429V21.8624H73.3173C72.8065 16.2946 67.8857 16.3798 67.8346 16.3798H64.0717V32.2657H65.7403C65.7403 32.2657 79.0212 32.7765 79.0212 23.5821H79.4639V23.5991Z"
+                            fill="white" />
+                        <path
+                            d="M135.142 0V0.374591C133.286 0.374591 130.459 1.80484 127.054 9.99472L118.932 32.7084H117.263C112.939 22.6286 110.163 16.1244 108.307 11.9017L100.884 32.7084H99.215C87.5176 5.34641 86.9047 4.15454 86.9047 4.15454C85.3212 0.4427 84.6742 0.493776 83.4653 0.391615V0.0170304H97.9551V0.391615C94.9754 0.391615 97.3591 5.77208 97.3591 5.77208L104.374 21.7091L108.086 11.3569C105.26 4.7675 104.97 4.15454 104.97 4.15454C103.387 0.4427 102.74 0.493776 101.531 0.391615V0.0170304H116.02V0.391615C113.041 0.391615 115.425 5.77208 115.425 5.77208L122.388 21.7432L126.56 9.99472C127.718 6.69153 126.696 0.374591 121.963 0.374591V0H135.142Z"
+                            fill="white" />
+                        <path
+                            d="M51.6763 40.2683V40.6429C49.8203 40.6429 46.9769 42.0902 43.5885 50.263L35.4668 72.9768H33.7981C29.4733 62.8969 26.698 56.3927 24.8421 52.17L17.4184 72.9768H15.7498C4.05237 45.6147 3.43941 44.4228 3.43941 44.4228C1.85592 40.711 1.2089 40.7621 0 40.6599V40.2853H14.4898V40.6599C11.5101 40.6599 13.8938 46.0404 13.8938 46.0404L20.9089 61.9774L24.6207 51.6252C21.7943 45.0358 21.5048 44.4228 21.5048 44.4228C19.9213 40.711 19.2743 40.7621 18.0654 40.6599V40.2853H32.5552V40.6599C29.5755 40.6599 31.9593 46.0404 31.9593 46.0404L38.9232 62.0115L43.1118 50.263C44.2696 46.9598 43.248 40.6429 38.5146 40.6429V40.2683H51.6763Z"
+                            fill="white" />
+                        <path
+                            d="M65.8255 40.2683H66.0639C77.8123 67.2047 78.5956 68.7371 78.5956 68.7371C80.2642 72.4489 81.8477 72.5 82.7671 72.5851V72.9597H66.5066V72.5851C70.2184 72.5851 67.443 67.1536 67.443 67.1536L65.9617 63.9526H56.8524C55.9159 66.0809 56.7673 72.5851 62.335 72.5851V72.9597H48.952V72.5851C50.3482 72.483 52.8511 72.1254 56.4267 63.9526L65.8255 40.2683ZM61.1431 53.0895L57.0056 63.5439H65.7914L61.1431 53.0895Z"
+                            fill="white" />
+                        <path
+                            d="M115.527 40.2683V40.6429C113.535 40.6429 110.555 42.0902 106.928 50.263L97.7848 72.9768H96.4397C83.9931 45.6147 83.3461 44.4228 83.3461 44.4228C81.6774 40.711 80.9793 40.7621 79.6853 40.6599V40.2853H95.1456V40.6599C91.9446 40.6599 94.4986 46.0404 94.4986 46.0404L101.701 62.0626L106.485 50.263C107.882 46.8236 107.047 40.6429 101.463 40.6429V40.2683H115.527Z"
+                            fill="white" />
+                        <path
+                            d="M145 63.8505V72.9598H117.876V72.5341C119.834 72.5341 120.567 69.7417 120.567 66.5918V46.6704C120.567 43.7929 119.92 40.6259 117.876 40.6259V40.2513H144.404V49.7693H143.978C143.978 40.7111 131.293 40.66 131.293 40.66H129.625V56.2225H133.388C133.439 56.2225 138.36 56.3587 138.87 50.7398H139.296V62.1137H138.87C138.36 56.546 133.439 56.6311 133.388 56.6311H129.625V72.5171H131.293C131.293 72.5171 144.574 73.0279 144.574 63.8334H145V63.8505Z"
+                            fill="white" />
+                    </svg>
+                    <p>©2023</p>
+                    <p>All rights reserved</p>
+                </div>
+                <nav class="info-company">
+                    <h3>Company</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Catalog</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Questions</a>
+                </nav>
+                <nav class="info-company">
+                    <h3>Support</h3>
+                    <a href="#">Help center</a>
+                    <a href="#">Terms of service</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Status</a>
+                </nav>
+
+<div class="email-address">
+<h3>Stay up to date</h3>
+<div class="email">
+    <input class="email-field"  type="email" required name="input-email" placeholder="Your email address">
+    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <g clip-path="url(#clip0_1_224)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0303 0.969691C17.2341 1.17342 17.3031 1.47584 17.2079 1.74778L11.9579 16.7478C11.8563 17.038 11.5878 17.2369 11.2806 17.2494C10.9733 17.2619 10.6895 17.0856 10.5646 16.8046L7.6818 10.3182L1.1954 7.43538C0.91439 7.31049 0.738092 7.02671 0.750627 6.71945C0.763163 6.41219 0.961991 6.14371 1.25224 6.04213L16.2522 0.792127C16.5242 0.696948 16.8266 0.765962 17.0303 0.969691ZM9.14456 9.91612L11.1671 14.4667L14.7064 4.35429L9.14456 9.91612ZM13.6457 3.29362L3.53331 6.83297L8.0839 8.85546L13.6457 3.29362Z" fill="black"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_224">
+            <rect width="18" height="18" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg></a>
+</div>
+
+</div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,39 @@
+
+.main-product h2 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 90px 0 56px 0;
+}
+
+.product-box {
+ display: grid;
+ grid-template-columns: repeat(4, 278px);
+ grid-column-gap: 43px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+.product a {
+    padding-bottom: 23px;
+}
+
+.name-product{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+       padding-bottom: 11px;
+}
+
+.product p {
+    color: #868686;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
